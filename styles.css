@@ -1,129 +1,56 @@
 
-/* Top Header */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* Added a default font-family */
+/* Nav bar */
 
-  }
+nav {
+padding: 35px 15px 15px 115px;
+position: sticky;
+top: 0;
+background-color: #add6dc;
+z-index: 100;
+}
 
-   header {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .header-content {
-    text-align: center;
-    padding: 1.5rem 0;
-  }
+nav ul li {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+}
 
-  .header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-  }
-  
-    /* Responsive  */
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px; /* Added padding for better readability */
-    }
-    
-    .container {
-      max-width: 500px; /* Modified max-width for better responsiveness */
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-@media screen and (min-width:1024px)
-{
-
+nav ul li a:hover{
+  color: #ffffff;
+  transition: .3s;
 }
 
 
-@media screen and (min-width:767px) and (max-width:1023px)
-{
-
-}
-
-@media screen and (max-width:767px)
-{
-  
-}
-
-
-
-
-
-  p {
-    margin-bottom: 10px;
-  }
-  
-
-  .contact-info {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  
-
-  section {
-    margin-bottom: 2rem;
-  }
-  
-
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    position: relative;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    text-align: center; /* Centered the heading */
-  }
-  
+ /* Text Animation Part */
  
-  ul {
-    list-style-type: none;
-  }
+.animated-word {
   
-  ul li {
-    font-size: 1rem;
-    line-height: 1.5;
-    padding-left: 20px;
-    position: relative;
-    margin-bottom: 5px;
-  }
-  
-  ul li::before {
-    content: "\2022";
-    position: absolute;
-    left: 0;
-    top: 5px;
-  }
-  
+display: flex;
+justify-content: center;
+}
 
-  
-  .job {
-    margin-bottom: 1.5rem;
-  }
-  
-  .job h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  
-  .location {
-    font-size: 1rem;
-    font-style: italic;
-  }
-  
+.letter {
+  transition: 0.5s;
+  cursor: grab;
+  color: #000000;
+  padding-top: 0px;
+}
+
+.letter:hover {
+  transform: translateY(-1rem);
+  background: -webkit-linear-gradient(120deg, hsl(199, 81%, 37%), hsl(207, 35%, 61%));
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
-
-
-
-  
+  /* Submit Form Part */
   form {
     display: grid;
     grid-gap: 10px;
@@ -157,34 +84,31 @@
   
 
 
+  .all {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+  }
 
 
-
-
-
-
-
-
-
-.animated-word {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2rem;
-
+h1 {
+  text-align: center;
 }
 
-.letter {
-  transition: 0.5s;
-  transform: translateX(0);
-  cursor: grab;
-  color: #000000;
+h2 {
+  text-align: center;
 }
 
-.letter:hover {
-  transform: translateY(-1rem);
-  background: -webkit-linear-gradient(120deg, hsl(199, 90%, 52%), hsl(207, 100%, 50%));
- -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.pp{
+  text-align: center;
+  padding-bottom: 10px;
 }
 
+.ppp{
+  text-align: justify;
+}
+
+.aa {
+text-align: justify;
+}
