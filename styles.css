@@ -8,7 +8,6 @@
 
 .navbar-custom .navbar-nav .nav-link {
   color: #000; /* Change the text color to black */
-  font-family: 'Fruktur', cursive;
   font-weight: bold;
 }
 
@@ -33,7 +32,6 @@
 .animated-word {
   display: flex;
   justify-content: center;
-  font-family: 'Fruktur', cursive;
   padding-top: 15px;
 
 }
@@ -71,7 +69,6 @@ form {
   grid-gap: 10px;
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Fruktur', cursive;
   font-weight: bold;
 }
 
@@ -128,17 +125,12 @@ h2 {
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 
 .adjust {
-  font-family: 'Fruktur', cursive;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 20px ;
   text-decoration: underline;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
-h3{
-  font-family: 'Kavoon', cursive;
-}
 
 p{
   font-family: 'Asul', sans-serif;
