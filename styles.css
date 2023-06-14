@@ -1,38 +1,41 @@
-
-/* Nav bar */
-
-nav {
-padding: 35px 15px 15px 115px;
-position: sticky;
-top: 0;
-background-color: #add6dc;
-z-index: 100;
+.navbar-custom {
+  background-color: #CADCFC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative; /* Added this line */
+ 
 }
 
-nav ul li {
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
-}
-
-nav ul li a{
-  color: #000000;
-  text-decoration: none;
+.navbar-custom .navbar-nav .nav-link {
+  color: #000; /* Change the text color to black */
+  font-family: 'Fruktur', cursive;
   font-weight: bold;
 }
 
-nav ul li a:hover{
-  color: #ffffff;
-  transition: .3s;
+.navbar-custom .navbar-nav {
+  float: none;
+  margin: 0 auto;
+}
+
+.navbar-custom .navbar-nav .nav-link .btn {
+  text-align: left;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: white;
 }
 
 
- /* Text Animation Part */
- 
+
+
+/* Text Animation Part */
+
 .animated-word {
-  
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'Fruktur', cursive;
+  padding-top: 15px;
+
 }
 
 .letter {
@@ -44,53 +47,66 @@ justify-content: center;
 
 .letter:hover {
   transform: translateY(-1rem);
-  background: -webkit-linear-gradient(120deg, hsl(199, 81%, 37%), hsl(207, 35%, 61%));
- -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    120deg,
+    hsl(214, 76%, 74%),
+    hsl(214, 100%, 21%)
+  );
+  /* Use a pseudo-element to create a text shadow */
+  ::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(202, 200, 200, 0.5);
+    box-shadow: 0 0 1px 1px #7c7c7c;
+  }
 }
 
 
-  /* Submit Form Part */
-  form {
-    display: grid;
-    grid-gap: 10px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  input[type="submit"] {
-    background-color: #379eac;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #50a794;
-  }
-  
+/* Submit Form Part */
+form {
+  display: grid;
+  grid-gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Fruktur', cursive;
+  font-weight: bold;
+}
 
+label {
+  font-weight: bold;
+}
 
-  .all {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
-  }
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
 
+input[type="submit"] {
+  background-color: #8AB6F9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00246B;
+}
+
+.all {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
 h1 {
   text-align: center;
@@ -100,15 +116,36 @@ h2 {
   text-align: center;
 }
 
-.pp{
+@import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
+.pp {
   text-align: center;
   padding-bottom: 10px;
+  font-family: 'Asul', sans-serif;
 }
 
-.ppp{
-  text-align: justify;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+.adjust {
+  font-family: 'Fruktur', cursive;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px ;
+  text-decoration: underline;
 }
 
-.aa {
-text-align: justify;
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+h3{
+  font-family: 'Kavoon', cursive;
 }
+
+p{
+  font-family: 'Asul', sans-serif;
+
+}
+
+ul {
+  font-family: 'Neuton', serif;
+}
+
